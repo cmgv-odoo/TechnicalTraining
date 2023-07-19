@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="registry_view_form" model="ir.ui.view">
+        <field name="name">registry.view.form</field>
+        <field name="model">carlosapp.registry</field>
+        <field name="arch" type="html">
+            <form sring="Registry View">
+                <header>
+                    <field name="name"/>
+                </header>
+
+                <sheet>
+                    <h1>
+                        <field name="name"/>
+                        <field name="picture" widget="image" class="oe_avatar"/>
+                    </h1>
+                    <group>
+                        <group>
+                            <separator string="Basic Information"/>
+                            <field name="first_name"/>
+                            <field name="last_name"/>
+                        </group>
+
+                        <group>
+                            <separator string="Other fields"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Certificade">
+                            <field name="certificate_title"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="registry_view_list" model="ir.ui.view">
+        <field name="name">registry.view.list</field>
+        <field name="model">carlosapp.registry</field>
+        <field name="arch" type="html">
+            <tree string="Registry List">
+                <field name="name"/>
+                <field name="vin"/>
+                <field name="license_plate"/>
+                <field name="first_name"/>
+                <field name="last_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="registry_view_search" model="ir.ui.view">
+        <field name="name">registry.view.search</field>
+        <field name="model">carlosapp.registry</field>
+        <field name="arch" type="html">
+            <search>
+                <field name="name"/>
+                <field name="vin"/>
+                <field name="last_name"/>
+                <field name="license_plate"/>
+            </search>
+        </field>
+    </record>
+
+
+</odoo>

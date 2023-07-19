@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+store_admin,store admin,model_carlosapp_registry,group_carlosapp_admin,1,1,1,1
+store_user,store user,model_carlosapp_registry,group_carlosapp_user,1,1,0,0
+store_read_all,store read all,model_carlosapp_registry,,1,0,0,0

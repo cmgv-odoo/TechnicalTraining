@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="registry_01" model="carlosapp.registry">
+            <field name="name">Ferrari</field>
+            <field name="vin">cmgv230100</field>
+            <field name="first_name">Carlos</field>
+            <field name="last_name">Vallejo</field>
+        </record>
+        <record id="registry_02" model="carlosapp.registry">
+            <field name="name">Italika</field>
+            <field name="vin">cmgv230100</field>
+            <field name="first_name">Luis</field>
+            <field name="last_name">Gonzalez</field>
+        </record>
+        <record id="registry_03" model="carlosapp.registry">
+            <field name="name">Promotors123</field>
+            <field name="vin">cmgv230100</field>
+            <field name="first_name">Jesus</field>
+            <field name="last_name">Fernandez</field>
+        </record>
+        <record id="registry_04" model="carlosapp.registry">
+            <field name="name">Hyunday</field>
+            <field name="vin">cmgv230100</field>
+            <field name="first_name">Alberto</field>
+            <field name="last_name">Jimenez</field>
+        </record>
+    </data>
+</odoo>
