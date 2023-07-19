@@ -14,6 +14,7 @@
         'security/carlosapp_groups.xml',
         'security/ir.model.access.csv',
         'security/carlosapp_security.xml',
+        'data/registry_data.xml',
         'views/carlosapp_menuitems.xml',
         'views/carlosapp_views.xml',
     ],
