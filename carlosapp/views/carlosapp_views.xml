@@ -16,13 +16,15 @@
                     </h1>
                     <group>
                         <group>
-                            <separator string="Basic Information"/>
+                            <separator string="Basic Information TEST"/>
                             <field name="first_name"/>
                             <field name="last_name"/>
                         </group>
 
                         <group>
                             <separator string="Other fields"/>
+                            <field name="vin"/>
+                            <field name="license_plate"/>
                         </group>
                     </group>
 

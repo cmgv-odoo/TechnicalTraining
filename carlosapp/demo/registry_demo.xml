@@ -3,27 +3,32 @@
     <data noupdate="1">
         <record id="registry_01" model="carlosapp.registry">
             <field name="name">Ferrari</field>
-            <field name="vin">cmgv230100</field>
+            <field name="vin">KAUK21XL847327</field>
             <field name="first_name">Carlos</field>
             <field name="last_name">Vallejo</field>
+            <field name="license_plate">KLV451</field>
+
         </record>
         <record id="registry_02" model="carlosapp.registry">
             <field name="name">Italika</field>
-            <field name="vin">cmgv230100</field>
+            <field name="vin">TAUK21XL847327</field>
             <field name="first_name">Luis</field>
             <field name="last_name">Gonzalez</field>
+            <field name="license_plate">KLV452</field>
         </record>
         <record id="registry_03" model="carlosapp.registry">
             <field name="name">Promotors123</field>
-            <field name="vin">cmgv230100</field>
+            <field name="vin">PAUK21XL847327</field>
             <field name="first_name">Jesus</field>
             <field name="last_name">Fernandez</field>
+            <field name="license_plate">KLV453</field>
         </record>
         <record id="registry_04" model="carlosapp.registry">
             <field name="name">Hyunday</field>
-            <field name="vin">cmgv230100</field>
+            <field name="vin">LAUK21XL847327</field>
             <field name="first_name">Alberto</field>
             <field name="last_name">Jimenez</field>
+            <field name="license_plate">KLV454</field>
         </record>
     </data>
 </odoo>
