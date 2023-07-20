@@ -16,15 +16,23 @@
                     </h1>
                     <group>
                         <group>
-                            <separator string="Basic Information TEST"/>
+                            <separator string="Motorcycle Information"/>
                             <field name="first_name"/>
                             <field name="last_name"/>
+                            <field name="vin"/>
+                            <field name="brand"/>
+                            <field name="make"/>
+                            <field name="model"/>
+                            <field name="current_mileage" />
+                            <field name="license_plate"/>
                         </group>
 
                         <group>
-                            <separator string="Other fields"/>
-                            <field name="vin"/>
-                            <field name="license_plate"/>
+                            <separator string="Owner Information"/>
+                            <field name="owner_id"/>
+                            <field name="owner_phone"/>
+                            <field name="owner_email"/>
+
                         </group>
                     </group>
 
@@ -45,6 +53,10 @@
             <tree string="Registry List">
                 <field name="name"/>
                 <field name="vin"/>
+                <field name="brand"/>
+                <field name="make"/>
+                <field name="model"/>
+                <field name="owner_id"/>
                 <field name="license_plate"/>
                 <field name="first_name"/>
                 <field name="last_name"/>

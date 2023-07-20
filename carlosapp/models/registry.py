@@ -13,9 +13,18 @@ class Registry(models.Model):
     last_name = fields.Char(required=True)
     picture = fields.Image()
     current_mileage = fields.Float()
-    license_plate = fields.Char()
+    license_plate = fields.Text()
     certificate_title = fields.Binary()
     register_date = fields.Date()
+
+    owner_id = fields.Many2one(comodel_name="res.partner")
+    owner_phone = fields.Char(related="owner_id.phone")
+    owner_email = fields.Char(related="owner_id.email")
+
+    brand = fields.Char(compute="_compute_set")
+    make = fields.Char(compute="_compute_set")
+    model = fields.Char(compute="_compute_set")
+
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -37,3 +46,11 @@ class Registry(models.Model):
         for registry in self:
             if (re.match(r'[A-Z][A-Z]?[A-Z]?[A-Z]?[0-9][0-9]?[0-9]?[A-Z]?[A-Z]?', registry.license_plate) is None):
                 raise ValidationError("1 - 4 Capital Letters \n1 - 3 Digits \nOptional 2 Capital Letters")
+
+
+    @api.depends("vin")
+    def _compute_set(self):
+        for record in self:
+            record.brand =  record.vin[:2]
+            record.make = record.vin[2:4]
+            record.model = record.vin[4:6]
