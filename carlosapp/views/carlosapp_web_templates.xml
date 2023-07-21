@@ -7,6 +7,8 @@
                 <t t-set="title"> Compare </t>
                 <div class="oe_structure">
                     <div class="container">
+                    <h1>Motorcycle Comparation</h1>
+                    <p> Check the different models we have to offer for you and compare some specs. </p>
                         <div class="card-group">
 
                             <div class="card shadow p-3 mb-5 bg-white rounded m-1">
