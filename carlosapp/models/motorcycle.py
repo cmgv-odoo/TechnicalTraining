@@ -3,7 +3,7 @@ from odoo import models, fields, api
 class Motorcycle(models.Model):
     _inherit = "product.template"
 
-
+    name = fields.Char()
     horsepower = fields.Char()
     top_speed = fields.Char()
     torque = fields.Char()
@@ -13,7 +13,6 @@ class Motorcycle(models.Model):
     curb_weight = fields.Char()
     make = fields.Char()
     model = fields.Char()
-    year = fields.Char()
 
     detailed_type = fields.Selection(selection_add=[
     ('motorcycle', 'Motorcycle'),

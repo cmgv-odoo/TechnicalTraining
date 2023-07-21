@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <template id="motorcycle_website">
+            <t t-call="website.layout">
+                <t t-set="title"> Compare </t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <div class="card-group">
+
+                            <div class="card shadow p-3 mb-5 bg-white rounded m-1">
+
+                                <div class="card-body mx-auto">
+                                    <h5 class="card-title">
+                                        Name
+                                    </h5>
+                                    <p class="card-text" style="height: 180px">Moto description</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"> Make Location </li>
+                                    <li class="list-group-item">Model</li>
+                                    <li class="list-group-item">Horsepower</li>
+                                    <li class="list-group-item">Top Speed (km/h)</li>
+                                    <li class="list-group-item">Torque vhm</li>
+                                    <li class="list-group-item">Curb Weight</li>
+                                    <li class="list-group-item">Range</li>
+                                    <li class="list-group-item">Battery capacity</li>
+                                    <li class="list-group-item">Charge time</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Home</a>
+                                    <a href="#" class="card-link">Cart</a>
+                                </div>
+                            </div>
+
+
+                            <t t-foreach="motorcycles" t-as="motorcycle">
+                                <div class="card shadow p-3 mb-5 bg-white rounded m-1">
+                                    <image t-if="motorcycle.image_1920" t-att-src="image_data_uri(motorcycle.image_1920)" class="card-img-bottom" alt="" loading="lazy"/>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <t t-esc="motorcycle.name"/>
+                                        </h5>
+                                        <p class="card-text" style="height: 100px">Some quick example textd title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"> <span t-field="motorcycle.make"/> </li>
+                                        <li class="list-group-item"> <span t-field="motorcycle.model"/> </li>
+                                        <li class="list-group-item"> <span t-field="motorcycle.horsepower"/>hp</li>
+                                        <li class="list-group-item"> <span t-field="motorcycle.top_speed"/> km/h</li>
+                                        <li class="list-group-item"> <span t-field="motorcycle.torque"/> </li>
+                                        <li class="list-group-item"> <span t-field="motorcycle.curb_weight"/> kg</li>
+                                        <li class="list-group-item"> <span t-field="motorcycle.range"/> </li>
+                                        <li class="list-group-item"> <span t-field="motorcycle.battery_capacity"/> mAh </li>
+                                        <li class="list-group-item"> <span t-field="motorcycle.charge_time"/> h </li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Buy</a>
+                                        <a href="#" class="card-link">Add to cart</a>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

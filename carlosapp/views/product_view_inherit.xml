@@ -14,7 +14,7 @@
                                 <separator string="Motorcycle Information"/>
                                 <field name="make"/>
                                 <field name="model"/>
-                                <field name="year"/>
+                                <field name="name"/>
                                 <field name="curb_weight"/>
                             </group>
 

@@ -9,7 +9,7 @@
     'author':'cmgv-odoo',
     'website':'www.odoo.com',
     'category':'Kawiil/Admin',
-    'depends':['stock'],
+    'depends':['stock', 'website'],
     'data':[
         'security/carlosapp_groups.xml',
         'security/ir.model.access.csv',
@@ -18,6 +18,7 @@
         'views/carlosapp_menuitems.xml',
         'views/carlosapp_views.xml',
         'views/product_view_inherit.xml',
+        'views/carlosapp_web_templates.xml',
     ],
     'demo':[
         'demo/registry_demo.xml',
